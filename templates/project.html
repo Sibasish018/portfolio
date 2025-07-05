@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-header">
+    <h1 class="page-title">My Projects</h1>
+    <p class="page-subtitle">A showcase of my development work and learning journey</p>
+</section>
+
+<section class="projects-filter">
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="mobile">Android Apps</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+    </div>
+</section>
+
+<section class="projects-grid">
+    <div class="project-card" data-category="backend">
+        <div class="project-image">
+            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" alt="Flask Web Application">
+            <div class="project-overlay">
+               
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Flask Web Application</h3>
+            <p class="project-category">Backend Development</p>
+            <p>A full-stack web application built with Flask, featuring user authentication, database integration, and RESTful API endpoints.</p>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">SQLite</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="mobile">
+        <div class="project-image">
+            <img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg" alt="Android Task Manager">
+            <div class="project-overlay">
+                
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Android Task Manager</h3>
+            <p class="project-category">Mobile App</p>
+            <p>A native Android application for task management with local database storage and intuitive user interface design.</p>
+            <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Android</span>
+                <span class="tag">SQLite</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="web">
+        <div class="project-image">
+            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg" alt="Portfolio Website">
+            <div class="project-overlay">
+                
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Personal Portfolio</h3>
+            <p class="project-category">Web Development</p>
+            <p>A responsive portfolio website showcasing my projects and skills, built with modern web technologies and clean design.</p>
+            <div class="project-tags">
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="backend">
+        <div class="project-image">
+            <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="REST API">
+            <div class="project-overlay">
+                
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>RESTful API Service</h3>
+            <p class="project-category">Backend Development</p>
+            <p>A comprehensive REST API built with Flask, featuring CRUD operations, authentication, and proper error handling.</p>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Flask</span>
+                <span class="tag">REST API</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="mobile">
+        <div class="project-image">
+            <img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg" alt="Student Helper App">
+            <div class="project-overlay">
+                
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Student Helper App</h3>
+            <p class="project-category">Mobile App</p>
+            <p>An Android application designed to help students manage their academic schedule, assignments, and study materials.</p>
+            <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Android</span>
+                <span class="tag">Education</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card" data-category="web">
+        <div class="project-image">
+            <img src="https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg" alt="Algorithm Visualizer">
+            <div class="project-overlay">
+                
+            </div>
+        </div>
+        <div class="project-info">
+            <h3>Algorithm Visualizer</h3>
+            <p class="project-category">Web Development</p>
+            <p>An interactive web application that visualizes various sorting and searching algorithms to aid in learning data structures.</p>
+            <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Algorithms</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="cta-content">
+        <h2>Interested in Collaborating?</h2>
+        <p>I'm always excited to work on new projects and learn from experienced developers. Let's build something amazing together!</p>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary">Get In Touch</a>
+    </div>
+</section>
+{% endblock %}

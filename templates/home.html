@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        
+        <h1 class="hero-title">
+            <span>Sibasish</span>
+            <span>   Sadangi</span>
+        </h1>
+        <p class="hero-subtitle">
+            Computer Science Student passionate about Software Development, Problem-Solving, and Building Innovative Solutions
+        </p>
+        <div class="hero-buttons">
+            <a href="{{ url_for('project') }}" class="btn btn-primary">My Projects</a>
+            <a href="{{ url_for('about') }}" class="btn btn-secondary">About Me</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/profile-photo.jpg') }}"  class="hero-photo">
+        </div>
+    </div>
+
+    <!-- Geometric Shapes -->
+    <div class="geometric-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+    </div>
+</section>
+
+<!-- Additional Home Content -->
+<section class="home-features">
+    <div class="features-grid">
+        <div class="feature-card">
+            <h3>Backend Development</h3>
+            <p>Building robust server-side applications using Python and Flask, focusing on clean architecture and efficient data handling.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Android Development</h3>
+            <p>Creating native Android applications with Java, implementing user-friendly interfaces and smooth functionality.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Problem Solving</h3>
+            <p>Strengthening Data Structures and Algorithms skills to become a more efficient and logical problem solver.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
